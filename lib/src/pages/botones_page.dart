@@ -167,9 +167,10 @@ class BotonesPage extends StatelessWidget {
 
     return Padding(
       padding: EdgeInsets.all(15.0),
-      child: ClipRect(
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(20.0),
         child: BackdropFilter(
-          filter: prefix0.ImageFilter.blur( sigmaX: 2.0, sigmaY: 2.0 ),
+          filter: prefix0.ImageFilter.blur( sigmaX: 10.0, sigmaY: 10.0 ),
           child: Container(
             height: 180.0,
             decoration: BoxDecoration(
